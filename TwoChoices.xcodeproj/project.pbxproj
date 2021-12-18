@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BB6A26276DEFF700320D7F /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB6A25276DEFF700320D7F /* InformationViewController.swift */; };
 		02CB90992769665E00EA44E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CB90982769665E00EA44E7 /* AppDelegate.swift */; };
 		02CB909B2769665E00EA44E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CB909A2769665E00EA44E7 /* SceneDelegate.swift */; };
 		02CB909D2769665E00EA44E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CB909C2769665E00EA44E7 /* ViewController.swift */; };
 		02CB90A02769665E00EA44E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CB909E2769665E00EA44E7 /* Main.storyboard */; };
 		02CB90A22769666000EA44E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CB90A12769666000EA44E7 /* Assets.xcassets */; };
 		02CB90A52769666000EA44E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CB90A32769666000EA44E7 /* LaunchScreen.storyboard */; };
+		02CB90AD2769699400EA44E7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CB90AC2769699400EA44E7 /* SettingViewController.swift */; };
+		02CB90AF276969AC00EA44E7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CB90AE276969AC00EA44E7 /* ResultViewController.swift */; };
+		02D0C345276D99900095A91E /* DoOrDont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0C344276D99900095A91E /* DoOrDont.swift */; };
+		6C0831E07057F9944A86271A /* Pods_TwoChoices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F283453BACA675E74B5E6B /* Pods_TwoChoices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02BB6A25276DEFF700320D7F /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		02CB90952769665E00EA44E7 /* TwoChoices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoChoices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CB90982769665E00EA44E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02CB909A2769665E00EA44E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		02CB90A12769666000EA44E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02CB90A42769666000EA44E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02CB90A62769666000EA44E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02CB90AC2769699400EA44E7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		02CB90AE276969AC00EA44E7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		02D0C344276D99900095A91E /* DoOrDont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoOrDont.swift; sourceTree = "<group>"; };
+		4D2B01AE42D11562C710FE31 /* Pods-TwoChoices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoChoices.debug.xcconfig"; path = "Target Support Files/Pods-TwoChoices/Pods-TwoChoices.debug.xcconfig"; sourceTree = "<group>"; };
+		C356B57824765B7F4CC305C9 /* Pods-TwoChoices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoChoices.release.xcconfig"; path = "Target Support Files/Pods-TwoChoices/Pods-TwoChoices.release.xcconfig"; sourceTree = "<group>"; };
+		F8F283453BACA675E74B5E6B /* Pods_TwoChoices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoChoices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0831E07057F9944A86271A /* Pods_TwoChoices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				02CB90972769665E00EA44E7 /* TwoChoices */,
 				02CB90962769665E00EA44E7 /* Products */,
+				8C6A323CBB8F5F1A276E316D /* Pods */,
+				5C25E0B48B7E6DC15A053066 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +78,29 @@
 				02CB90A12769666000EA44E7 /* Assets.xcassets */,
 				02CB90A32769666000EA44E7 /* LaunchScreen.storyboard */,
 				02CB90A62769666000EA44E7 /* Info.plist */,
+				02CB90AC2769699400EA44E7 /* SettingViewController.swift */,
+				02CB90AE276969AC00EA44E7 /* ResultViewController.swift */,
+				02D0C344276D99900095A91E /* DoOrDont.swift */,
+				02BB6A25276DEFF700320D7F /* InformationViewController.swift */,
 			);
 			path = TwoChoices;
+			sourceTree = "<group>";
+		};
+		5C25E0B48B7E6DC15A053066 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8F283453BACA675E74B5E6B /* Pods_TwoChoices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C6A323CBB8F5F1A276E316D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D2B01AE42D11562C710FE31 /* Pods-TwoChoices.debug.xcconfig */,
+				C356B57824765B7F4CC305C9 /* Pods-TwoChoices.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02CB90A92769666000EA44E7 /* Build configuration list for PBXNativeTarget "TwoChoices" */;
 			buildPhases = (
+				A82A79123B8A398CC351A939 /* [CP] Check Pods Manifest.lock */,
 				02CB90912769665E00EA44E7 /* Sources */,
 				02CB90922769665E00EA44E7 /* Frameworks */,
 				02CB90932769665E00EA44E7 /* Resources */,
+				A284FE39C9ACD69885D650CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +171,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A284FE39C9ACD69885D650CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwoChoices/Pods-TwoChoices-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwoChoices/Pods-TwoChoices-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoChoices/Pods-TwoChoices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A82A79123B8A398CC351A939 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwoChoices-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02CB90912769665E00EA44E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CB90AF276969AC00EA44E7 /* ResultViewController.swift in Sources */,
 				02CB909D2769665E00EA44E7 /* ViewController.swift in Sources */,
+				02BB6A26276DEFF700320D7F /* InformationViewController.swift in Sources */,
 				02CB90992769665E00EA44E7 /* AppDelegate.swift in Sources */,
 				02CB909B2769665E00EA44E7 /* SceneDelegate.swift in Sources */,
+				02D0C345276D99900095A91E /* DoOrDont.swift in Sources */,
+				02CB90AD2769699400EA44E7 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +368,7 @@
 		};
 		02CB90AA2769666000EA44E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D2B01AE42D11562C710FE31 /* Pods-TwoChoices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +380,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Lerchall.TwoChoices;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lerchall.TwoChoices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,6 +398,7 @@
 		};
 		02CB90AB2769666000EA44E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C356B57824765B7F4CC305C9 /* Pods-TwoChoices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +418,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Lerchall.TwoChoices;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lerchall.TwoChoices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
