@@ -8,23 +8,32 @@
 import UIKit
 import GoogleMobileAds
 
+
 class ViewController: UIViewController, GADBannerViewDelegate {
+
+    
     
     var bannerView: GADBannerView!
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var settingButton: UIButton!
     @IBOutlet weak var doOrDontButton: UIButton!
 
+    @IBOutlet weak var informationButton: UIButton!
+    
+
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        settingButton.contentHorizontalAlignment = .fill
         // MARK: - ads
         // In this case, we instantiate the banner with desired ad size.
 
         
            bannerView = GADBannerView(adSize: GADAdSizeBanner)
         
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-3014443422203887/4253023511"
         bannerView.rootViewController = self
         bannerView.delegate = self
            addBannerViewToView(bannerView)
@@ -47,8 +56,6 @@ class ViewController: UIViewController, GADBannerViewDelegate {
                 // 影の方向（width=右方向、height=下方向）
         doOrDontButton.layer.shadowOffset = CGSize(width: 5, height: 5)
         
-        // MARK: - 設定ボタンアレンジ
-        settingButton.imageView?.contentMode = .scaleAspectFill
     }
     @IBAction func unwind(_ seg: UIStoryboardSegue) {
     }

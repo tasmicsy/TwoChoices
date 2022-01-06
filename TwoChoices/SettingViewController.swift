@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var peopleTextField: UITextField!
@@ -22,7 +22,8 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         super.viewDidLoad()
         
         overrideUserInterfaceStyle = .light
-        
+        thingsTextField.delegate = self
+        peopleTextField.delegate = self
         pickerView.dataSource = self
         pickerView.delegate = self
         // Do any additional setup after loading the view.
@@ -71,6 +72,13 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
         }
     }
+    // MARK: - textfield関連
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder()
+           return true
+       }
+    
     func changeLabel(){
         var people = peopleTextField.text ?? "私"
         people = people == "" ? "私" : people

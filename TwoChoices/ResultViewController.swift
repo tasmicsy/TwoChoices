@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleMobileAds
+import UserMessagingPlatform
 
 class ResultViewController: UIViewController, GADBannerViewDelegate {
     var bannerView: GADBannerView!
@@ -25,7 +26,7 @@ class ResultViewController: UIViewController, GADBannerViewDelegate {
         
            bannerView = GADBannerView(adSize: GADAdSizeBanner)
         
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-3014443422203887/4253023511"
         bannerView.rootViewController = self
         bannerView.delegate = self
            addBannerViewToView(bannerView)

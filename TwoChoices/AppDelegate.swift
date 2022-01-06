@@ -7,14 +7,29 @@
 
 import UIKit
 import GoogleMobileAds
+import AppTrackingTransparency
+import AdSupport
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    func applicationDidBecomeActive(_ application: UIApplication) {
 
-
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        if #available(iOS 14, *) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                
+            // Tracking authorization completed. Start loading ads here.
+            // loadAd()
+
+            })
+                
+        }
+            
+        }        // Override point for customization after application launch.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         return true
